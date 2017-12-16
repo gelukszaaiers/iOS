@@ -32,7 +32,52 @@ class AddSeedViewController: FormViewController {
     }
 
     @IBAction func save(_ sender: AnyObject) {
-        print(#function)
+        print(#function, titleField.value)
+        print(#function, descriptionField.value)
+        print(#function, beginDateField.value)
+        print(#function, endDateField.value)
     }
+
+    // MARK: - Form
+
+    override func populate(_ builder: FormBuilder) {
+        builder += titleField
+        builder += SectionFormItem()
+        builder += descriptionField
+        builder += SectionFormItem()
+        builder += beginDateField
+        builder += endDateField
+    }
+
+    // MARK: Fields
+
+    lazy var titleField: TextFieldFormItem = {
+        let field = TextFieldFormItem()
+        field.title("Titel").placeholder("Your seed")
+        field.keyboardType = .asciiCapable
+        field.autocorrectionType = .no
+        field.submitValidate(CountSpecification.min(1), message: "Should have a correct value")
+        return field
+    }()
+
+    lazy var descriptionField: TextViewFormItem = {
+        let field = TextViewFormItem()
+        field.title("Korte omschrijving van het aanbod").placeholder("Some description")
+        return field
+    }()
+
+    lazy var beginDateField: DatePickerFormItem = {
+        let field = DatePickerFormItem()
+        field.title = "Begin"
+        field.datePickerMode = .dateAndTime
+        return field
+    }()
+
+    lazy var endDateField: DatePickerFormItem = {
+        let field = DatePickerFormItem()
+        field.title = "Einde"
+        field.datePickerMode = .dateAndTime
+        return field
+    }()
 
 }
