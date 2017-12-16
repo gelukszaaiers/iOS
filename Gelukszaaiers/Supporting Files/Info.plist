@@ -63,5 +63,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We want to display you closest seeds.</string>
 </dict>
 </plist>
