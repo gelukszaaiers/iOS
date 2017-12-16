@@ -20,6 +20,7 @@ class JSONSerializer<T: Codable>: Serializer {
         }
 
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .millisecondsSince1970
         do {
             self.result = try decoder.decode(Result<T>.self, from: data)
         } catch {
