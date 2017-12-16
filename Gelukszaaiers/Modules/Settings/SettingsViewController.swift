@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class SettingsViewController: UIViewController {
 
@@ -89,10 +90,11 @@ extension SettingsViewController: UITableViewDelegate {
 // MARK: - Actions
 extension SettingsViewController {
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
-        
+        FBSDKLoginManager().logOut()
+        closePressed(sender)
     }
     
-    @IBAction func closePressed(_ sender: UIBarButtonItem) {
+    @IBAction func closePressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }
