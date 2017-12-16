@@ -13,6 +13,7 @@ class MapViewController: UIViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet weak var mapContainerView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var seedsLabel: UILabel!
 
