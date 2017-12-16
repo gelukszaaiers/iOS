@@ -554,7 +554,6 @@
 				48570B981FE54A4F00015BE5 /* Settings.storyboard in Resources */,
 				9D3FCEC31FE5378600A9DC85 /* Home.storyboard in Resources */,
 				48570BA31FE558C400015BE5 /* EditProfile.storyboard in Resources */,
-				9D3FCEE91FE5520700A9DC85 /* Add Seed.storyboard in Resources */,
 				48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */,
 				48A344031FE530CC00B80086 /* OnboardingCollectionViewCell.xib in Resources */,
 				48570B8E1FE535C200015BE5 /* Login.storyboard in Resources */,
