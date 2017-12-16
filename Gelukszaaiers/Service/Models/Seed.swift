@@ -9,34 +9,6 @@
 import Foundation
 
 struct Seed: Codable {
-
-    struct Image: Codable {
-        var name: String?
-        var url: URL?
-    }
-
-    struct Coordinate: Codable {
-        var lat: Double?
-        var lng: Double?
-    }
-
-    struct Location: Codable {
-        var address: String?
-        var postalcode: Int?
-        var city: String?
-        var country: String?
-        var coordinates: Coordinate?
-    }
-
-    struct Visitor: Codable {
-        var id: String?
-        var name: String?
-        var email: String?
-        var mobile: String?
-        var avatar: URL?
-        var langcode: String?
-    }
-
     var id: String?
     var ownerId: String?
     var title: String?
@@ -48,6 +20,5 @@ struct Seed: Codable {
 
     var location: Location?
     var media: [Image]?
-    var visitors: [Visitor]?
-
+    var visitors: [Person]?
 }
