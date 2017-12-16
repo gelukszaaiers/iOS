@@ -41,10 +41,11 @@ extension StartViewController {
     }
     
     func setupNavigationBar() {
+        navigationController?.navigationBar.setupBar()
         navigationController?.navigationBar.clear()
         navigationController?.navigationBar.tintColor = .white
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
     }
 }
 

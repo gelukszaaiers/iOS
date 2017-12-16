@@ -16,6 +16,12 @@
 		48570B9C1FE54A6400015BE5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */; };
 		48570B9F1FE5520B00015BE5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B9D1FE5520B00015BE5 /* SettingsTableViewCell.swift */; };
 		48570BA01FE5520B00015BE5 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */; };
+		48570BA31FE558C400015BE5 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48570BA21FE558C400015BE5 /* EditProfile.storyboard */; };
+		48570BA51FE55B9E00015BE5 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570BA41FE55B9E00015BE5 /* EditProfileViewController.swift */; };
+		48570BA71FE55BA700015BE5 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570BA61FE55BA700015BE5 /* EditProfileViewModel.swift */; };
+		48570BAA1FE55E3200015BE5 /* EditProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570BA91FE55E3200015BE5 /* EditProfileTextField.swift */; };
+		48570BAC1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570BAB1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift */; };
+		48570BAE1FE5635600015BE5 /* EditProfileSuccessfullViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570BAD1FE5635600015BE5 /* EditProfileSuccessfullViewModel.swift */; };
 		48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A343DF1FE520DC00B80086 /* Onboarding.storyboard */; };
 		48A343E31FE5210600B80086 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A343E21FE5210600B80086 /* Start.storyboard */; };
 		48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343E41FE5210F00B80086 /* StartViewModel.swift */; };
@@ -75,6 +81,12 @@
 		48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		48570B9D1FE5520B00015BE5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		48570BA21FE558C400015BE5 /* EditProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		48570BA41FE55B9E00015BE5 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		48570BA61FE55BA700015BE5 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		48570BA91FE55E3200015BE5 /* EditProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTextField.swift; sourceTree = "<group>"; };
+		48570BAB1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSuccessfullViewController.swift; sourceTree = "<group>"; };
+		48570BAD1FE5635600015BE5 /* EditProfileSuccessfullViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileSuccessfullViewModel.swift; sourceTree = "<group>"; };
 		48A343DF1FE520DC00B80086 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		48A343E21FE5210600B80086 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		48A343E41FE5210F00B80086 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
@@ -169,6 +181,7 @@
 		48570B961FE54A3C00015BE5 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				48570BA11FE558B300015BE5 /* EditProfile */,
 				48570B971FE54A4F00015BE5 /* Settings.storyboard */,
 				48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */,
 				48570B991FE54A5A00015BE5 /* SettingsViewController.swift */,
@@ -176,6 +189,26 @@
 				48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		48570BA11FE558B300015BE5 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				48570BA21FE558C400015BE5 /* EditProfile.storyboard */,
+				48570BA61FE55BA700015BE5 /* EditProfileViewModel.swift */,
+				48570BA41FE55B9E00015BE5 /* EditProfileViewController.swift */,
+				48570BAD1FE5635600015BE5 /* EditProfileSuccessfullViewModel.swift */,
+				48570BAB1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		48570BA81FE55E2300015BE5 /* EditProfileTextField */ = {
+			isa = PBXGroup;
+			children = (
+				48570BA91FE55E3200015BE5 /* EditProfileTextField.swift */,
+			);
+			path = EditProfileTextField;
 			sourceTree = "<group>";
 		};
 		48A343DD1FE5208600B80086 /* Modules */ = {
@@ -226,6 +259,7 @@
 		48A343F01FE5271700B80086 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				48570BA81FE55E2300015BE5 /* EditProfileTextField */,
 				48A343F71FE5283B00B80086 /* GradientCornerButton */,
 				48A343F11FE527A100B80086 /* RoundCornerButton */,
 				48A343F61FE527FC00B80086 /* ColorRoundCornerButton */,
@@ -494,6 +528,7 @@
 				48570BA01FE5520B00015BE5 /* SettingsTableViewCell.xib in Resources */,
 				48570B981FE54A4F00015BE5 /* Settings.storyboard in Resources */,
 				9D3FCEC31FE5378600A9DC85 /* Home.storyboard in Resources */,
+				48570BA31FE558C400015BE5 /* EditProfile.storyboard in Resources */,
 				48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */,
 				48A344031FE530CC00B80086 /* OnboardingCollectionViewCell.xib in Resources */,
 				48570B8E1FE535C200015BE5 /* Login.storyboard in Resources */,
@@ -579,12 +614,14 @@
 				48A344011FE52E3300B80086 /* UIView+Identifier.swift in Sources */,
 				48570B9F1FE5520B00015BE5 /* SettingsTableViewCell.swift in Sources */,
 				48A343F51FE527F800B80086 /* ColorRoundCornerButton.swift in Sources */,
+				48570BA51FE55B9E00015BE5 /* EditProfileViewController.swift in Sources */,
 				9D3FCECF1FE5379400A9DC85 /* Coordinate.swift in Sources */,
 				48A343EF1FE5240E00B80086 /* UIColor+Palette.swift in Sources */,
 				48A343FB1FE52C9A00B80086 /* OnboardingViewController.swift in Sources */,
 				9D3FCED91FE53FD100A9DC85 /* YourProfileRequest.swift in Sources */,
 				48A343EB1FE522C100B80086 /* CAGradientLayer+Image.swift in Sources */,
 				9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */,
+				48570BAE1FE5635600015BE5 /* EditProfileSuccessfullViewModel.swift in Sources */,
 				9D3FCECD1FE5379400A9DC85 /* Seed.swift in Sources */,
 				48A343FF1FE52DC600B80086 /* OnboardingCollectionViewCell.swift in Sources */,
 				48570B9C1FE54A6400015BE5 /* SettingsViewModel.swift in Sources */,
@@ -593,6 +630,7 @@
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
 				9D06ED711FE525780026845C /* Adapter.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
+				48570BAC1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift in Sources */,
 				9D3FCEC41FE5378600A9DC85 /* MapViewController.swift in Sources */,
 				9D3FCEDB1FE5421A00A9DC85 /* SeedTableViewCell.swift in Sources */,
 				9D06ED731FE5261F0026845C /* Serializer.swift in Sources */,
@@ -603,7 +641,9 @@
 				48A343F31FE527C100B80086 /* RoundCornerButton.swift in Sources */,
 				9D3FCED51FE5382C00A9DC85 /* HomeViewModel.swift in Sources */,
 				48570B901FE5371000015BE5 /* LoginViewController.swift in Sources */,
+				48570BAA1FE55E3200015BE5 /* EditProfileTextField.swift in Sources */,
 				48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */,
+				48570BA71FE55BA700015BE5 /* EditProfileViewModel.swift in Sources */,
 				48A343E71FE5211800B80086 /* StartViewController.swift in Sources */,
 				9D06ED751FE5295D0026845C /* SeedsRequest.swift in Sources */,
 				48A343FD1FE52CAA00B80086 /* OnboardingViewModel.swift in Sources */,

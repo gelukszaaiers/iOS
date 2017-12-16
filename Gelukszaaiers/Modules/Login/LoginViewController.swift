@@ -48,7 +48,7 @@ extension LoginViewController {
     }
     
     func setupNavigationBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
     }
     
     func setupFacebookButton() {

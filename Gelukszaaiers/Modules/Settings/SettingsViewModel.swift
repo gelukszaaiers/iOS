@@ -9,5 +9,11 @@
 import Foundation
 
 struct SettingsViewModel {
-    
+    var data: [String] {
+        return [
+            "Wijzig gegevens",
+            "Wijzig wachtwoord",
+            "Account verificatie"
+        ]
+    }
 }

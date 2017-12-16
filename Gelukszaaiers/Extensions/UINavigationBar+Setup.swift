@@ -22,4 +22,9 @@ extension UINavigationBar {
         shadowImage = UIImage()
         isTranslucent = true
     }
+    
+    func setupBar() {
+        tintColor = UIColor.white
+        titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white]
+    }
 }

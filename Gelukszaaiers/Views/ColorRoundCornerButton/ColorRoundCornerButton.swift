@@ -9,11 +9,12 @@
 import UIKit
 
 class ColorRoundCornerButton: RoundCornerButton {
-
-    var color: UIColor? {
+    
+    @IBInspectable var color: UIColor? {
         set {
             guard let value = newValue else { return }
             layer.borderColor = value.cgColor
+            self.setTitleColor(value, for: .normal)
         }
         get {
             guard let borderColor = layer.borderColor else { return nil }

@@ -24,4 +24,8 @@ extension UIColor {
     class var leaf: UIColor {
         return UIColor(red: 127.0/255.0, green: 168.0/255.0, blue: 47.0/255.0, alpha: 1)
     }
+    
+    class var silver: UIColor {
+        return UIColor(red: 200.0/255.0, green: 199.0/255.0, blue: 204.0/255.0, alpha: 1)
+    }
 }
