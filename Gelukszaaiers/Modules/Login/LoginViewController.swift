@@ -52,10 +52,6 @@ extension LoginViewController {
 
 // MARK: - Actions
 extension LoginViewController {
-    @IBAction func facebookButtonPressed(_ sender: UIButton) {
-        
-    }
-    
     @IBAction func infoButtonPressed(_ sender: UIBarButtonItem) {
         let viewController = SFSafariViewController(url: ApplicationKeys.shared.website)
         viewController.delegate = self

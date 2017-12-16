@@ -28,23 +28,17 @@
                                     <segue destination="GzE-zY-Pho" kind="show" id="bb9-IM-ed1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-fW-DZH" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
-                                <rect key="frame" x="35" y="539" width="305" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="27a-of-n2w"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-fW-DZH" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="35" y="318.5" width="305" height="30"/>
                                 <state key="normal" title="Login met Facebook"/>
-                                <connections>
-                                    <action selector="facebookButtonPressed:" destination="geQ-ek-Acs" eventType="touchUpInside" id="g4J-HX-2xG"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EfM-Ko-UQk" firstAttribute="trailing" secondItem="tbc-fW-DZH" secondAttribute="trailing" constant="35" id="2uR-IX-L7t"/>
                             <constraint firstItem="EfM-Ko-UQk" firstAttribute="bottom" secondItem="yK3-fV-OdO" secondAttribute="bottom" constant="32" id="9AV-ha-cdc"/>
+                            <constraint firstItem="tbc-fW-DZH" firstAttribute="centerY" secondItem="9uf-W7-8xX" secondAttribute="centerY" id="E0a-mT-DLO"/>
                             <constraint firstItem="yK3-fV-OdO" firstAttribute="leading" secondItem="EfM-Ko-UQk" secondAttribute="leading" constant="35" id="Vrj-PP-jPp"/>
-                            <constraint firstItem="yK3-fV-OdO" firstAttribute="top" secondItem="tbc-fW-DZH" secondAttribute="bottom" constant="8" id="n2h-Mm-mxV"/>
                             <constraint firstItem="tbc-fW-DZH" firstAttribute="leading" secondItem="EfM-Ko-UQk" secondAttribute="leading" constant="35" id="sV8-rM-tq6"/>
                             <constraint firstItem="EfM-Ko-UQk" firstAttribute="trailing" secondItem="yK3-fV-OdO" secondAttribute="trailing" constant="35" id="yTJ-Bh-Cd9"/>
                         </constraints>

@@ -50,10 +50,10 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoWithText" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-2S-hLz">
-                                <rect key="frame" x="124" y="64" width="126" height="134"/>
+                                <rect key="frame" x="124" y="20" width="126" height="134"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ga aan de slag!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJJ-K9-1fM">
-                                <rect key="frame" x="82.5" y="229" width="209.5" height="35"/>
+                                <rect key="frame" x="82.5" y="185" width="209.5" height="35"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wJJ-K9-1fM" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="EMM-FF-FC9"/>
-                            <constraint firstItem="Smc-2S-hLz" firstAttribute="top" secondItem="Gcy-sY-iTN" secondAttribute="top" constant="64" id="G5V-cq-DYW"/>
+                            <constraint firstItem="Smc-2S-hLz" firstAttribute="top" secondItem="cIK-MP-mHr" secondAttribute="top" constant="20" id="G5V-cq-DYW"/>
                             <constraint firstItem="1QK-4I-WhA" firstAttribute="leading" secondItem="cIK-MP-mHr" secondAttribute="leading" constant="35" id="T8R-dM-cXd"/>
                             <constraint firstItem="cIK-MP-mHr" firstAttribute="bottom" secondItem="1QK-4I-WhA" secondAttribute="bottom" constant="32" id="abb-fx-RWc"/>
                             <constraint firstItem="Smc-2S-hLz" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="iQV-Gc-4BR"/>
