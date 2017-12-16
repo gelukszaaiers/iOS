@@ -240,7 +240,6 @@
 				9D3FCEBF1FE5378600A9DC85 /* Home.storyboard */,
 				9D3FCED21FE5382100A9DC85 /* HomeViewController.swift */,
 				9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */,
-				9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */,
 				9D3FCEC01FE5378600A9DC85 /* Map */,
 			);
 			name = Home;
@@ -274,6 +273,22 @@
 			path = Coordinate;
 			sourceTree = "<group>";
 		};
+		9D3FCEDC1FE5483D00A9DC85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9D3FCEDD1FE5484D00A9DC85 /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9D3FCEDD1FE5484D00A9DC85 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9D62EE8E1FE5193800EA6F5B = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +312,7 @@
 			children = (
 				9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */,
 				48570B931FE53BA200015BE5 /* ApplicationKeys */,
+				9D3FCEDC1FE5483D00A9DC85 /* Components */,
 				48A343E91FE5227D00B80086 /* Extensions */,
 				48A343DD1FE5208600B80086 /* Modules */,
 				9D62EEAE1FE51AE300EA6F5B /* Service */,

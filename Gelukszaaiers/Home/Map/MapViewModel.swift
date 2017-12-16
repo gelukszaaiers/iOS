@@ -10,20 +10,27 @@ import Foundation
 import MapKit
 import CoreLocation
 
-class MapViewModel {
+class MapViewModel: NSObject {
 
     // MARK: - Internals
 
     private let service: Service
+    private let locationManager = CLLocationManager()
 
     // MARK: - Handlers
 
     var updateSeeds: (() -> ())?
+    var updateRegion: ((_ region: MKCoordinateRegion) -> ())?
 
     // MARK: - Init
 
     init(service: Service = Service.shared) {
         self.service = service
+        super.init()
+
+        // Request current location.
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
     }
 
     // MARK: - Text
@@ -57,6 +64,20 @@ class MapViewModel {
                 print("💥", error)
             }
         }
+    }
+
+}
+
+extension MapViewModel: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        guard
+            let coordinate = manager.location?.coordinate,
+            status == .authorizedWhenInUse else { return }
+
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        updateRegion?(region)
     }
 
 }
