@@ -1,0 +1,6 @@
+framework module Pods_Gelukszaaiers {
+  umbrella header "Pods-Gelukszaaiers-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967BA01C0B7FAB090149BFED /* Pods_Gelukszaaiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA01FE5193800EA6F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EE9E1FE5193800EA6F5B /* Main.storyboard */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		9D62EEB71FE51B4600EA6F5B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEB61FE51B4600EA6F5B /* Result.swift */; };
 		9D62EEB91FE51B5E00EA6F5B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEB81FE51B5E00EA6F5B /* Response.swift */; };
 		9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEBB1FE51BAE00EA6F5B /* Profile.swift */; };
+		9D62EEC01FE51C9100EA6F5B /* FacebookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEBF1FE51C9100EA6F5B /* FacebookRequest.swift */; };
+		9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEC21FE51D1D00EA6F5B /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448BF78D6B64BE8CBC5D9F66 /* Pods-Gelukszaaiers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gelukszaaiers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers.release.xcconfig"; sourceTree = "<group>"; };
+		7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gelukszaaiers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D62EE9F1FE5193800EA6F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		9D62EEB61FE51B4600EA6F5B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		9D62EEB81FE51B5E00EA6F5B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		9D62EEBB1FE51BAE00EA6F5B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9D62EEBF1FE51C9100EA6F5B /* FacebookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRequest.swift; sourceTree = "<group>"; };
+		9D62EEC21FE51D1D00EA6F5B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B96AF64C9CDF96584A32F9A4 /* Pods-Gelukszaaiers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gelukszaaiers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967BA01C0B7FAB090149BFED /* Pods_Gelukszaaiers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38393CB0A828F688E4F52D3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B96AF64C9CDF96584A32F9A4 /* Pods-Gelukszaaiers.debug.xcconfig */,
+				448BF78D6B64BE8CBC5D9F66 /* Pods-Gelukszaaiers.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9D62EE8E1FE5193800EA6F5B = {
 			isa = PBXGroup;
 			children = (
 				9D62EE991FE5193800EA6F5B /* Gelukszaaiers */,
 				9D62EE981FE5193800EA6F5B /* Products */,
+				38393CB0A828F688E4F52D3F /* Pods */,
+				F135FA5226DE441838F02B7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +111,7 @@
 		9D62EEAE1FE51AE300EA6F5B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9D62EEC11FE51D1500EA6F5B /* Backend */,
 				9D62EEAF1FE51AED00EA6F5B /* Models */,
 				9D62EEB11FE51AFA00EA6F5B /* Requests */,
 				9D62EEBA1FE51B6C00EA6F5B /* Serializer */,
@@ -109,6 +130,7 @@
 		9D62EEB11FE51AFA00EA6F5B /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				9D62EEBF1FE51C9100EA6F5B /* FacebookRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -124,6 +146,22 @@
 			path = Serializer;
 			sourceTree = "<group>";
 		};
+		9D62EEC11FE51D1500EA6F5B /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				9D62EEC21FE51D1D00EA6F5B /* Service.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		F135FA5226DE441838F02B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D62EEA91FE5193800EA6F5B /* Build configuration list for PBXNativeTarget "Gelukszaaiers" */;
 			buildPhases = (
+				F2C44AB3CAAA49BDD5874628 /* [CP] Check Pods Manifest.lock */,
 				9D62EE931FE5193800EA6F5B /* Sources */,
 				9D62EE941FE5193800EA6F5B /* Frameworks */,
 				9D62EE951FE5193800EA6F5B /* Resources */,
+				090F94D65B2F79658592F335 /* [CP] Embed Pods Frameworks */,
+				3051FB84CA83DC9C31E38808 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,14 +232,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		090F94D65B2F79658592F335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireActivityLogger/AlamofireActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Stella/Stella.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stella.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3051FB84CA83DC9C31E38808 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2C44AB3CAAA49BDD5874628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gelukszaaiers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D62EE931FE5193800EA6F5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9D62EEB51FE51B3400EA6F5B /* BackendError.swift in Sources */,
+				9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */,
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
+				9D62EEC01FE51C9100EA6F5B /* FacebookRequest.swift in Sources */,
 				9D62EEB71FE51B4600EA6F5B /* Result.swift in Sources */,
 				9D62EEB31FE51B1C00EA6F5B /* JSONSerializer.swift in Sources */,
 				9D62EEB91FE51B5E00EA6F5B /* Response.swift in Sources */,
@@ -336,6 +437,7 @@
 		};
 		9D62EEAA1FE5193800EA6F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B96AF64C9CDF96584A32F9A4 /* Pods-Gelukszaaiers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +455,7 @@
 		};
 		9D62EEAB1FE5193800EA6F5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448BF78D6B64BE8CBC5D9F66 /* Pods-Gelukszaaiers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
