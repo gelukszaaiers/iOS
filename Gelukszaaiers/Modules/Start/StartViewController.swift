@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class StartViewController: UIViewController {
 
@@ -40,6 +41,9 @@ extension StartViewController {
     
     func setupNavigationBar() {
         navigationController?.navigationBar.clear()
+        navigationController?.navigationBar.tintColor = .white
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
     }
 }
 
@@ -50,5 +54,21 @@ extension StartViewController {
         hapinessOfferButton?.setTitle(viewModel.hapinessOfferButtonTitle, for: .normal)
         loginButton?.setTitle(viewModel.loginButtonTitle, for: .normal)
         registerButton?.setTitle(viewModel.registerButtonTitle, for: .normal)
+    }
+}
+
+// MARK: - Actions
+extension StartViewController {
+    @IBAction func infoButtonPressed(_ sender: UIBarButtonItem) {
+        let viewController = SFSafariViewController(url: ApplicationKeys.shared.website)
+        viewController.delegate = self
+        present(viewController, animated: true, completion: nil)
+    }
+}
+
+// MARK: - SFSafariViewControllerDelegate
+extension StartViewController: SFSafariViewControllerDelegate {
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

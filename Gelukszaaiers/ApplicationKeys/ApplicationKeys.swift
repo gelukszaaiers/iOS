@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct ApplicationKeys {
+    static var shared = ApplicationKeys()
+    
+    var website: URL {
+        return URL(string: "http://www.gelukszaaiers.be")!
+    }
+    
+}

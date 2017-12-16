@@ -1,7 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="geQ-ek-Acs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="uZ0-Va-vyX">
+            <objects>
+                <viewController id="geQ-ek-Acs" customClass="LoginViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9uf-W7-8xX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yK3-fV-OdO" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
+                                <rect key="frame" x="35" y="591" width="305" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OLc-6A-80U"/>
+                                </constraints>
+                                <state key="normal" title="Registreren"/>
+                                <connections>
+                                    <segue destination="GzE-zY-Pho" kind="show" id="bb9-IM-ed1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-fW-DZH" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
+                                <rect key="frame" x="35" y="539" width="305" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="27a-of-n2w"/>
+                                </constraints>
+                                <state key="normal" title="Login met Facebook"/>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="geQ-ek-Acs" eventType="touchUpInside" id="g4J-HX-2xG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EfM-Ko-UQk" firstAttribute="trailing" secondItem="tbc-fW-DZH" secondAttribute="trailing" constant="35" id="2uR-IX-L7t"/>
+                            <constraint firstItem="EfM-Ko-UQk" firstAttribute="bottom" secondItem="yK3-fV-OdO" secondAttribute="bottom" constant="32" id="9AV-ha-cdc"/>
+                            <constraint firstItem="yK3-fV-OdO" firstAttribute="leading" secondItem="EfM-Ko-UQk" secondAttribute="leading" constant="35" id="Vrj-PP-jPp"/>
+                            <constraint firstItem="yK3-fV-OdO" firstAttribute="top" secondItem="tbc-fW-DZH" secondAttribute="bottom" constant="8" id="n2h-Mm-mxV"/>
+                            <constraint firstItem="tbc-fW-DZH" firstAttribute="leading" secondItem="EfM-Ko-UQk" secondAttribute="leading" constant="35" id="sV8-rM-tq6"/>
+                            <constraint firstItem="EfM-Ko-UQk" firstAttribute="trailing" secondItem="yK3-fV-OdO" secondAttribute="trailing" constant="35" id="yTJ-Bh-Cd9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EfM-Ko-UQk"/>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="tbc-fW-DZH" id="9Ri-37-qOK"/>
+                        <outlet property="registerButton" destination="yK3-fV-OdO" id="bCW-L4-peu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfh-pp-k9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.40000000000001" y="205.54722638680661"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="NBk-t0-AcP">
+            <objects>
+                <viewControllerPlaceholder id="GzE-zY-Pho" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03S-7w-zzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="205"/>
+        </scene>
+    </scenes>
 </document>

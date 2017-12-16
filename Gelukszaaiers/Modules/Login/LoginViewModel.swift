@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct LoginViewModel {
+    var facebookButtonTitle: String {
+        return "Login met Facebook"
+    }
+    
+    var registerButtonTitle: String {
+        return "Registreren"
+    }
+}

@@ -36,6 +36,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-Xd-sO4" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52.5" width="305" height="44.5"/>
                                         <state key="normal" title="Inloggen"/>
+                                        <connections>
+                                            <segue destination="MX7-q0-NLS" kind="show" id="wHL-dY-bfV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfD-UE-4kN" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="105" width="305" height="44.5"/>
@@ -56,7 +59,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wJJ-K9-1fM" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="EMM-FF-FC9"/>
-                            <constraint firstItem="Smc-2S-hLz" firstAttribute="top" secondItem="cIK-MP-mHr" secondAttribute="top" constant="64" id="G5V-cq-DYW"/>
+                            <constraint firstItem="Smc-2S-hLz" firstAttribute="top" secondItem="Gcy-sY-iTN" secondAttribute="top" constant="64" id="G5V-cq-DYW"/>
                             <constraint firstItem="1QK-4I-WhA" firstAttribute="leading" secondItem="cIK-MP-mHr" secondAttribute="leading" constant="35" id="T8R-dM-cXd"/>
                             <constraint firstItem="cIK-MP-mHr" firstAttribute="bottom" secondItem="1QK-4I-WhA" secondAttribute="bottom" constant="32" id="abb-fx-RWc"/>
                             <constraint firstItem="Smc-2S-hLz" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="iQV-Gc-4BR"/>
@@ -76,6 +79,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wue-jZ-aCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-212" y="-15.742128935532236"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="Z3j-UY-VzQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="MX7-q0-NLS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TuJ-yv-dMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Phw-Lq-Ial">

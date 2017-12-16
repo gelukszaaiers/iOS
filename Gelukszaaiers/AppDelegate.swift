@@ -27,16 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
 
         // SEEDS EXAMPLE
-        let request = SeedsRequest(filter: .likes)
-        let serializer = JSONSerializer<[Seed]>()
-        Service.shared.execute(request, with: serializer) {
-            switch serializer.response {
-            case .success(let result):
-                print(result.data)
-            case .failure(let error):
-                print(error)
-            }
-        }        
+//        let request = SeedsRequest(filter: .likes)
+//        let serializer = JSONSerializer<[Seed]>()
+//        Service.shared.execute(request, with: serializer) {
+//            switch serializer.response {
+//            case .success(let result):
+//                print(result.data)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }        
         
         return true
     }

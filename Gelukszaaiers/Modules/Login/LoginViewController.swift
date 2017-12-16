@@ -7,29 +7,65 @@
 //
 
 import UIKit
+import SafariServices
 
 class LoginViewController: UIViewController {
 
+    // MARK: - ViewModel
+    fileprivate let viewModel = LoginViewModel()
+    
+    // MARK: - Outlets
+    @IBOutlet weak var facebookButton: UIButton?
+    @IBOutlet weak var registerButton: UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView()
+        updateTranslations()
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK: - Setup
+extension LoginViewController {
+    func setupView() {
+        setupBackground()
+        setupNavigationBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupBackground() {
+        let gradientLayer = CAGradientLayer(frame: view.bounds, colors: [.lightGold, .mango])
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
-    */
+    
+    func setupNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
+    }
+}
 
+// MARK: - Translations
+extension LoginViewController {
+    func updateTranslations() {
+        facebookButton?.setTitle(viewModel.facebookButtonTitle, for: .normal)
+        registerButton?.setTitle(viewModel.registerButtonTitle, for: .normal)
+    }
+}
+
+// MARK: - Actions
+extension LoginViewController {
+    @IBAction func facebookButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func infoButtonPressed(_ sender: UIBarButtonItem) {
+        let viewController = SFSafariViewController(url: ApplicationKeys.shared.website)
+        viewController.delegate = self
+        present(viewController, animated: true, completion: nil)
+    }
+}
+
+// MARK: - SFSafariViewControllerDelegate
+extension LoginViewController: SFSafariViewControllerDelegate {
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
+    }
 }
