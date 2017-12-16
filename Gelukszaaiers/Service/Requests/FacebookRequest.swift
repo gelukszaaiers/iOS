@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 struct FacebookRequest {
 
@@ -24,16 +25,13 @@ extension FacebookRequest: Request {
         return "auth/facebook"
     }
 
-    var query: [String: String] {
-        return [
-            "token": "facebook_token"
-        ]
+    var method: HTTPMethod {
+        return .get
     }
 
-    var headers: [String: String] {
+    var query: [String: Any]? {
         return [
-            "x-user-agent": "Gelukszaaiers iOS/",
-            "Content-Type": "application/json"
+            "token": token
         ]
     }
 

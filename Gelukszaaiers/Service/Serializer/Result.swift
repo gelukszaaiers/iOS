@@ -11,8 +11,8 @@ import Foundation
 struct Result<T: Codable>: Codable {
 
     struct Metadata: Codable {
+        var count: Int?
         var totalCount: Int?
-        var itemCount: Int?
     }
 
     var meta: Metadata?

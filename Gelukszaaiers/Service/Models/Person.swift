@@ -1,5 +1,5 @@
 //
-//  Profile.swift
+//  Person.swift
 //  Gelukszaaiers
 //
 //  Created by Jelle Vandebeeck on 16/12/2017.
@@ -8,20 +8,11 @@
 
 import Foundation
 
-struct Profile: Codable {
-
-    struct Authentication: Codable {
-        var accessToken: String?
-        var refreshToken: String?
-    }
-
+struct Person: Codable {
     var id: String?
     var name: String?
     var email: String?
     var mobile: String?
-    var verified: Bool?
     var avatar: URL?
     var langcode: String?
-    var authentication: Authentication?
-
 }

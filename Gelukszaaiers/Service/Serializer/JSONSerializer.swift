@@ -8,13 +8,19 @@
 
 import Foundation
 
-class JSONSerializer<T: Codable> {
+class JSONSerializer<T: Codable>: Serializer {
 
     private var result: Result<T>?
     private var error: BackendError?
 
-    func serialize(_ data: Data) {
+    func serialize(_ data: Data?) {
+        guard let data = data else {
+            self.error = BackendError()
+            return
+        }
+
         let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .millisecondsSince1970
         do {
             self.result = try decoder.decode(Result<T>.self, from: data)
         } catch {
