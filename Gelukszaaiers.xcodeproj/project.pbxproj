@@ -11,6 +11,11 @@
 		48570B901FE5371000015BE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B8F1FE5371000015BE5 /* LoginViewController.swift */; };
 		48570B921FE5371A00015BE5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B911FE5371A00015BE5 /* LoginViewModel.swift */; };
 		48570B951FE53BAE00015BE5 /* ApplicationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B941FE53BAE00015BE5 /* ApplicationKeys.swift */; };
+		48570B981FE54A4F00015BE5 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48570B971FE54A4F00015BE5 /* Settings.storyboard */; };
+		48570B9A1FE54A5A00015BE5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B991FE54A5A00015BE5 /* SettingsViewController.swift */; };
+		48570B9C1FE54A6400015BE5 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */; };
+		48570B9F1FE5520B00015BE5 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48570B9D1FE5520B00015BE5 /* SettingsTableViewCell.swift */; };
+		48570BA01FE5520B00015BE5 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */; };
 		48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A343DF1FE520DC00B80086 /* Onboarding.storyboard */; };
 		48A343E31FE5210600B80086 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A343E21FE5210600B80086 /* Start.storyboard */; };
 		48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343E41FE5210F00B80086 /* StartViewModel.swift */; };
@@ -65,6 +70,11 @@
 		48570B8F1FE5371000015BE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48570B911FE5371A00015BE5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		48570B941FE53BAE00015BE5 /* ApplicationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationKeys.swift; sourceTree = "<group>"; };
+		48570B971FE54A4F00015BE5 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		48570B991FE54A5A00015BE5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		48570B9D1FE5520B00015BE5 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		48A343DF1FE520DC00B80086 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		48A343E21FE5210600B80086 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		48A343E41FE5210F00B80086 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
@@ -156,6 +166,18 @@
 			path = ApplicationKeys;
 			sourceTree = "<group>";
 		};
+		48570B961FE54A3C00015BE5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				48570B971FE54A4F00015BE5 /* Settings.storyboard */,
+				48570B9B1FE54A6400015BE5 /* SettingsViewModel.swift */,
+				48570B991FE54A5A00015BE5 /* SettingsViewController.swift */,
+				48570B9D1FE5520B00015BE5 /* SettingsTableViewCell.swift */,
+				48570B9E1FE5520B00015BE5 /* SettingsTableViewCell.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		48A343DD1FE5208600B80086 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +185,7 @@
 				48A343DE1FE520BA00B80086 /* Onboarding */,
 				48570B8C1FE535B800015BE5 /* Login */,
 				48A343E11FE520F700B80086 /* Start */,
+				48570B961FE54A3C00015BE5 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -452,6 +475,8 @@
 				9D62EEA51FE5193800EA6F5B /* LaunchScreen.storyboard in Resources */,
 				9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */,
 				48A343E31FE5210600B80086 /* Start.storyboard in Resources */,
+				48570BA01FE5520B00015BE5 /* SettingsTableViewCell.xib in Resources */,
+				48570B981FE54A4F00015BE5 /* Settings.storyboard in Resources */,
 				9D3FCEC31FE5378600A9DC85 /* Home.storyboard in Resources */,
 				48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */,
 				48A344031FE530CC00B80086 /* OnboardingCollectionViewCell.xib in Resources */,
@@ -536,6 +561,7 @@
 				9D62EEB51FE51B3400EA6F5B /* BackendError.swift in Sources */,
 				9D3FCED31FE5382100A9DC85 /* HomeViewController.swift in Sources */,
 				48A344011FE52E3300B80086 /* UIView+Identifier.swift in Sources */,
+				48570B9F1FE5520B00015BE5 /* SettingsTableViewCell.swift in Sources */,
 				48A343F51FE527F800B80086 /* ColorRoundCornerButton.swift in Sources */,
 				9D3FCECF1FE5379400A9DC85 /* Coordinate.swift in Sources */,
 				48A343EF1FE5240E00B80086 /* UIColor+Palette.swift in Sources */,
@@ -545,6 +571,7 @@
 				9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */,
 				9D3FCECD1FE5379400A9DC85 /* Seed.swift in Sources */,
 				48A343FF1FE52DC600B80086 /* OnboardingCollectionViewCell.swift in Sources */,
+				48570B9C1FE54A6400015BE5 /* SettingsViewModel.swift in Sources */,
 				9D33D5131FE52F870047E16B /* Location.swift in Sources */,
 				48A343ED1FE522D500B80086 /* UINavigationBar+Setup.swift in Sources */,
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
@@ -553,6 +580,7 @@
 				9D3FCEC41FE5378600A9DC85 /* MapViewController.swift in Sources */,
 				9D3FCEDB1FE5421A00A9DC85 /* SeedTableViewCell.swift in Sources */,
 				9D06ED731FE5261F0026845C /* Serializer.swift in Sources */,
+				48570B9A1FE54A5A00015BE5 /* SettingsViewController.swift in Sources */,
 				9D33D50F1FE52F780047E16B /* Image.swift in Sources */,
 				48A343F91FE5284700B80086 /* GradientCornerButton.swift in Sources */,
 				48570B921FE5371A00015BE5 /* LoginViewModel.swift in Sources */,
