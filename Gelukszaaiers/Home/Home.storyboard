@@ -111,7 +111,7 @@
                     <navigationItem key="navigationItem" id="URC-01-oyF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ktu-5N-xhq">
                             <connections>
-                                <segue destination="kQg-3g-juq" kind="presentation" id="sg8-YN-8BJ"/>
+                                <action selector="addNewSeed:" destination="fDs-SW-r9B" id="WKb-BC-rMJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -122,14 +122,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eT9-zQ-YFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8.8000000000000007" y="89.505247376311857"/>
-        </scene>
-        <!--Add Seed-->
-        <scene sceneID="yfZ-hd-gNw">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Add Seed" id="kQg-3g-juq" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ODe-jf-RSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="541" y="89"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="i98-s1-iSA">

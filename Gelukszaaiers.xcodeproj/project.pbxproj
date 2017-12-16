@@ -58,7 +58,6 @@
 		9D3FCED71FE53EE000A9DC85 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED61FE53EE000A9DC85 /* Authentication.swift */; };
 		9D3FCED91FE53FD100A9DC85 /* YourProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED81FE53FD100A9DC85 /* YourProfileRequest.swift */; };
 		9D3FCEDB1FE5421A00A9DC85 /* SeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */; };
-		9D3FCEE91FE5520700A9DC85 /* Add Seed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3FCEE81FE5520700A9DC85 /* Add Seed.storyboard */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
 		9D62EEA51FE5193800EA6F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA31FE5193800EA6F5B /* LaunchScreen.storyboard */; };
@@ -69,6 +68,7 @@
 		9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEBB1FE51BAE00EA6F5B /* Profile.swift */; };
 		9D62EEC01FE51C9100EA6F5B /* FacebookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEBF1FE51C9100EA6F5B /* FacebookRequest.swift */; };
 		9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EEC21FE51D1D00EA6F5B /* Service.swift */; };
+		9DAF02621FE55E05006DD753 /* AddSeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF02611FE55E05006DD753 /* AddSeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,7 +124,6 @@
 		9D3FCED61FE53EE000A9DC85 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		9D3FCED81FE53FD100A9DC85 /* YourProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileRequest.swift; sourceTree = "<group>"; };
 		9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedTableViewCell.swift; sourceTree = "<group>"; };
-		9D3FCEE81FE5520700A9DC85 /* Add Seed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Add Seed.storyboard"; sourceTree = "<group>"; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D62EEA11FE5193800EA6F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +136,7 @@
 		9D62EEBB1FE51BAE00EA6F5B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9D62EEBF1FE51C9100EA6F5B /* FacebookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookRequest.swift; sourceTree = "<group>"; };
 		9D62EEC21FE51D1D00EA6F5B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9DAF02611FE55E05006DD753 /* AddSeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSeedViewController.swift; sourceTree = "<group>"; };
 		B96AF64C9CDF96584A32F9A4 /* Pods-Gelukszaaiers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gelukszaaiers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gelukszaaiers/Pods-Gelukszaaiers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,7 +216,7 @@
 		48A343DD1FE5208600B80086 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9D3FCEE71FE551F900A9DC85 /* Add Seed */,
+				9DAF02601FE55DFA006DD753 /* Add Seed */,
 				9D3FCEBE1FE5378600A9DC85 /* Home */,
 				48A343DE1FE520BA00B80086 /* Onboarding */,
 				48570B8C1FE535B800015BE5 /* Login */,
@@ -349,14 +349,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		9D3FCEE71FE551F900A9DC85 /* Add Seed */ = {
-			isa = PBXGroup;
-			children = (
-				9D3FCEE81FE5520700A9DC85 /* Add Seed.storyboard */,
-			);
-			path = "Add Seed";
-			sourceTree = "<group>";
-		};
 		9D62EE8E1FE5193800EA6F5B = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +447,14 @@
 				9D62EEC21FE51D1D00EA6F5B /* Service.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		9DAF02601FE55DFA006DD753 /* Add Seed */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF02611FE55E05006DD753 /* AddSeedViewController.swift */,
+			);
+			path = "Add Seed";
 			sourceTree = "<group>";
 		};
 		F135FA5226DE441838F02B7A /* Frameworks */ = {
@@ -642,6 +642,7 @@
 				9D33D5131FE52F870047E16B /* Location.swift in Sources */,
 				48A343ED1FE522D500B80086 /* UINavigationBar+Setup.swift in Sources */,
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
+				9DAF02621FE55E05006DD753 /* AddSeedViewController.swift in Sources */,
 				9D06ED711FE525780026845C /* Adapter.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
 				48570BAC1FE5634C00015BE5 /* EditProfileSuccessfullViewController.swift in Sources */,

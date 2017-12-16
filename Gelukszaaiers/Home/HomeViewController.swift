@@ -38,9 +38,12 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
 
-    // MARK: - Segue
+    // MARK: - Actions
 
-    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+    @IBAction func addNewSeed(_ sender: AnyObject) {
+        let controller = AddSeedViewController()
+        let navigationController = UINavigationController(rootViewController: controller)
+        present(navigationController, animated: true, completion: nil)
     }
 
 }
