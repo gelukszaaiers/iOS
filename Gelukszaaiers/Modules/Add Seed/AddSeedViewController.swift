@@ -45,13 +45,18 @@ class AddSeedViewController: FormViewController {
         builder += SectionFormItem()
         builder += descriptionField
         builder += SectionFormItem()
+        if images.count > 0 {
+        } else {
+            builder += addImageButton
+        }
+        builder += SectionFormItem()
         builder += beginDateField
         builder += endDateField
     }
 
     // MARK: Fields
 
-    lazy var titleField: TextFieldFormItem = {
+    private lazy var titleField: TextFieldFormItem = {
         let field = TextFieldFormItem()
         field.title("Titel").placeholder("Your seed")
         field.keyboardType = .asciiCapable
@@ -60,24 +65,63 @@ class AddSeedViewController: FormViewController {
         return field
     }()
 
-    lazy var descriptionField: TextViewFormItem = {
+    private lazy var descriptionField: TextViewFormItem = {
         let field = TextViewFormItem()
         field.title("Korte omschrijving van het aanbod").placeholder("Some description")
         return field
     }()
 
-    lazy var beginDateField: DatePickerFormItem = {
+    // MARK: Images
+
+    private lazy var beginDateField: DatePickerFormItem = {
         let field = DatePickerFormItem()
         field.title = "Begin"
         field.datePickerMode = .dateAndTime
         return field
     }()
 
-    lazy var endDateField: DatePickerFormItem = {
+    private lazy var endDateField: DatePickerFormItem = {
         let field = DatePickerFormItem()
         field.title = "Einde"
         field.datePickerMode = .dateAndTime
         return field
     }()
+
+    // MARK: Images
+
+    private var images: [UIImage] = []
+
+    private lazy var addImageButton: ButtonFormItem = { [unowned self] in
+        let button = ButtonFormItem()
+        button.title = "Voeg afbeelding toe (optioneel)"
+        button.action = self.showImagePicker
+        return button
+    }()
+
+    private func showImagePicker() {
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true)
+    }
+
+}
+
+extension AddSeedViewController: UINavigationControllerDelegate {
+}
+
+extension AddSeedViewController: UIImagePickerControllerDelegate {
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            images.append(image)
+            reloadForm()
+        }
+        dismiss(animated: true, completion: nil)
+    }
 
 }
