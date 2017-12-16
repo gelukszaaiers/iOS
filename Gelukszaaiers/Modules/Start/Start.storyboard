@@ -1,7 +1,82 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5A9-XH-G7E">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Start-->
+        <scene sceneID="3qT-Bl-oYm">
+            <objects>
+                <viewController title="Start" id="5A9-XH-G7E" customClass="StartViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gcy-sY-iTN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1QK-4I-WhA">
+                                <rect key="frame" x="35" y="485" width="305" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esr-zR-cxv">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="50"/>
+                                        <state key="normal" title="Bekijk het geluksaanbod"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-Xd-sO4">
+                                        <rect key="frame" x="0.0" y="50" width="305" height="50"/>
+                                        <state key="normal" title="Inloggen"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfD-UE-4kN">
+                                        <rect key="frame" x="0.0" y="100" width="305" height="50"/>
+                                        <state key="normal" title="Registreren"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="wo3-Ib-e7M"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoWithText" translatesAutoresizingMaskIntoConstraints="NO" id="Smc-2S-hLz">
+                                <rect key="frame" x="124" y="84" width="126" height="134"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ga aan de slag!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJJ-K9-1fM">
+                                <rect key="frame" x="82.5" y="249" width="209.5" height="35"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wJJ-K9-1fM" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="EMM-FF-FC9"/>
+                            <constraint firstItem="Smc-2S-hLz" firstAttribute="top" secondItem="cIK-MP-mHr" secondAttribute="top" constant="64" id="G5V-cq-DYW"/>
+                            <constraint firstItem="1QK-4I-WhA" firstAttribute="leading" secondItem="cIK-MP-mHr" secondAttribute="leading" constant="35" id="T8R-dM-cXd"/>
+                            <constraint firstItem="cIK-MP-mHr" firstAttribute="bottom" secondItem="1QK-4I-WhA" secondAttribute="bottom" constant="32" id="abb-fx-RWc"/>
+                            <constraint firstItem="Smc-2S-hLz" firstAttribute="centerX" secondItem="Gcy-sY-iTN" secondAttribute="centerX" id="iQV-Gc-4BR"/>
+                            <constraint firstItem="cIK-MP-mHr" firstAttribute="trailing" secondItem="1QK-4I-WhA" secondAttribute="trailing" constant="35" id="uvj-px-edC"/>
+                            <constraint firstItem="wJJ-K9-1fM" firstAttribute="top" secondItem="Smc-2S-hLz" secondAttribute="bottom" constant="31" id="vLx-2V-pbX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cIK-MP-mHr"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="CXW-Xd-sO4" id="TKN-ZZ-zfR"/>
+                        <outlet property="registerButton" destination="JfD-UE-4kN" id="BsC-JA-Wad"/>
+                        <outlet property="titleLabel" destination="wJJ-K9-1fM" id="WDR-Km-Gij"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wue-jZ-aCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoWithText" width="126" height="134"/>
+    </resources>
 </document>
