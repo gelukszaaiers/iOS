@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 import SafariServices
 
 class StartViewController: UIViewController {
@@ -22,6 +23,7 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupView()
         updateTranslations()
     }

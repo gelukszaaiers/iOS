@@ -8,6 +8,7 @@
 
 import UIKit
 import SafariServices
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class LoginViewController: UIViewController {
     fileprivate let viewModel = LoginViewModel()
     
     // MARK: - Outlets
-    @IBOutlet weak var facebookButton: UIButton?
+    @IBOutlet weak var facebookButton: FBSDKLoginButton?
     @IBOutlet weak var registerButton: UIButton?
     
     override func viewDidLoad() {
@@ -40,12 +41,15 @@ extension LoginViewController {
     func setupNavigationBar() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Info"), style: .done, target: self, action: #selector(infoButtonPressed(_:)))
     }
+    
+    func setupFacebookButton() {
+        facebookButton?.readPermissions = ["public_profile", "email"]
+    }
 }
 
 // MARK: - Translations
 extension LoginViewController {
     func updateTranslations() {
-        facebookButton?.setTitle(viewModel.facebookButtonTitle, for: .normal)
         registerButton?.setTitle(viewModel.registerButtonTitle, for: .normal)
     }
 }

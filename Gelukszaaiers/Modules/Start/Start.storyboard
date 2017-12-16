@@ -33,7 +33,7 @@
                                         </constraints>
                                         <state key="normal" title="Bekijk het geluksaanbod"/>
                                         <connections>
-                                            <segue destination="ibq-4j-JeR" kind="show" id="i6K-6o-mT9"/>
+                                            <segue destination="ibq-4j-JeR" kind="show" identifier="goToHome" id="i6K-6o-mT9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-Xd-sO4" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
