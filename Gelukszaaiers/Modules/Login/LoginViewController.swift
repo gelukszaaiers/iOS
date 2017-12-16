@@ -24,6 +24,13 @@ class LoginViewController: UIViewController {
         setupView()
         updateTranslations()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if FBSDKAccessToken.current() != nil {
+            performSegue(withIdentifier: "goToHome", sender: nil)
+        }
+    }
 }
 
 // MARK: - Setup

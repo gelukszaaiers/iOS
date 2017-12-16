@@ -24,9 +24,6 @@
                                     <constraint firstAttribute="height" constant="44" id="OLc-6A-80U"/>
                                 </constraints>
                                 <state key="normal" title="Registreren"/>
-                                <connections>
-                                    <segue destination="GzE-zY-Pho" kind="show" id="bb9-IM-ed1"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbc-fW-DZH" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="35" y="318.5" width="305" height="30"/>
@@ -47,6 +44,7 @@
                     <connections>
                         <outlet property="facebookButton" destination="tbc-fW-DZH" id="9Ri-37-qOK"/>
                         <outlet property="registerButton" destination="yK3-fV-OdO" id="bCW-L4-peu"/>
+                        <segue destination="OiB-Ui-4Mt" kind="show" identifier="goToHome" id="XFv-f9-H5U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfh-pp-k9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -54,12 +52,12 @@
             <point key="canvasLocation" x="-146.40000000000001" y="205.54722638680661"/>
         </scene>
         <!--Storyboard Reference-->
-        <scene sceneID="NBk-t0-AcP">
+        <scene sceneID="AHu-Vh-nF1">
             <objects>
-                <viewControllerPlaceholder id="GzE-zY-Pho" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="03S-7w-zzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder id="OiB-Ui-4Mt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RK7-1a-Yw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662" y="205"/>
+            <point key="canvasLocation" x="474" y="203"/>
         </scene>
     </scenes>
 </document>
