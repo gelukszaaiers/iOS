@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let request = FacebookRequest(token: "123")
         Service.shared.execute(request) {
             print("success")
-        }
-
+        }        
+        
         return true
     }
 

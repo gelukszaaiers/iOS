@@ -17,4 +17,10 @@ extension UINavigationBar {
         
         setBackgroundImage(gradientLayer.gradientImage, for: UIBarMetrics.default)
     }
+    
+    func clear() {
+        setBackgroundImage(UIImage(), for: .default)
+        shadowImage = UIImage()
+        isTranslucent = true
+    }
 }

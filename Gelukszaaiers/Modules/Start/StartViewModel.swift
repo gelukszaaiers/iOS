@@ -13,6 +13,10 @@ struct StartViewModel {
         return "Ga aan de slag!"
     }
     
+    var hapinessOfferButtonTitle: String {
+        return "Bekijk het geluksaanbod"
+    }
+    
     var loginButtonTitle: String {
         return "Inloggen"
     }

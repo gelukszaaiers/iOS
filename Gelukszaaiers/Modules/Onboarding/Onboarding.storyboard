@@ -10,20 +10,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
         <scene sceneID="awg-jZ-V5g">
             <objects>
-                <viewController id="Im3-03-V75" sceneMemberID="viewController">
+                <viewController id="Im3-03-V75" customClass="OnboardingViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bru-aX-4P2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoWithText" translatesAutoresizingMaskIntoConstraints="NO" id="avF-Dd-w7I">
+                                <rect key="frame" x="124" y="84" width="126" height="134"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81W-JF-aVl" customClass="GradientCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
+                                <rect key="frame" x="35" y="591" width="305" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GeO-Ga-DcH"/>
+                                </constraints>
+                                <state key="normal" title="Skip intro"/>
+                                <connections>
+                                    <segue destination="Zp1-N9-hi2" kind="show" id="5kK-mO-udD"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zWs-WL-Nbb">
+                                <rect key="frame" x="168" y="546" width="39" height="37"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0sP-60-OQa">
+                                <rect key="frame" x="0.0" y="248" width="375" height="268"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nc3-T4-TZD">
+                                    <size key="itemSize" width="279" height="280"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="avF-Dd-w7I" firstAttribute="centerX" secondItem="bru-aX-4P2" secondAttribute="centerX" id="4Fo-XI-txJ"/>
+                            <constraint firstItem="zWs-WL-Nbb" firstAttribute="top" secondItem="0sP-60-OQa" secondAttribute="bottom" constant="30" id="7Cq-w3-TPs"/>
+                            <constraint firstItem="avF-Dd-w7I" firstAttribute="top" secondItem="tfO-vk-RFG" secondAttribute="top" constant="64" id="Dbf-8b-jEt"/>
+                            <constraint firstItem="zWs-WL-Nbb" firstAttribute="centerX" secondItem="bru-aX-4P2" secondAttribute="centerX" id="Jq3-xH-uz5"/>
+                            <constraint firstItem="tfO-vk-RFG" firstAttribute="bottom" secondItem="81W-JF-aVl" secondAttribute="bottom" constant="32" id="Kxm-s2-ggY"/>
+                            <constraint firstItem="tfO-vk-RFG" firstAttribute="trailing" secondItem="0sP-60-OQa" secondAttribute="trailing" id="LeQ-xZ-GvS"/>
+                            <constraint firstItem="81W-JF-aVl" firstAttribute="top" secondItem="zWs-WL-Nbb" secondAttribute="bottom" constant="8" id="PWz-WW-Xw4"/>
+                            <constraint firstItem="tfO-vk-RFG" firstAttribute="trailing" secondItem="81W-JF-aVl" secondAttribute="trailing" constant="35" id="RHe-Kp-rAQ"/>
+                            <constraint firstItem="0sP-60-OQa" firstAttribute="top" secondItem="avF-Dd-w7I" secondAttribute="bottom" constant="30" id="bpc-7x-Fkc"/>
+                            <constraint firstItem="81W-JF-aVl" firstAttribute="leading" secondItem="tfO-vk-RFG" secondAttribute="leading" constant="35" id="kom-Xf-tlA"/>
+                            <constraint firstItem="0sP-60-OQa" firstAttribute="leading" secondItem="tfO-vk-RFG" secondAttribute="leading" id="wQC-fk-n7A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tfO-vk-RFG"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="0sP-60-OQa" id="34H-O3-nob"/>
+                        <outlet property="pageControl" destination="zWs-WL-Nbb" id="V4F-W3-HCM"/>
+                        <outlet property="startButton" destination="81W-JF-aVl" id="683-so-AAh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2py-eB-g8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="201"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="178.56071964017991"/>
+        </scene>
+        <!--Start-->
+        <scene sceneID="Fdf-bY-xNa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Start" id="Zp1-N9-hi2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0o-uN-TXs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="178"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoWithText" width="126" height="134"/>
+    </resources>
 </document>

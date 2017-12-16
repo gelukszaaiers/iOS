@@ -12,8 +12,16 @@
 		48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343E41FE5210F00B80086 /* StartViewModel.swift */; };
 		48A343E71FE5211800B80086 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343E61FE5211800B80086 /* StartViewController.swift */; };
 		48A343EB1FE522C100B80086 /* CAGradientLayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343EA1FE522C100B80086 /* CAGradientLayer+Image.swift */; };
-		48A343ED1FE522D500B80086 /* UINavigationBar+GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343EC1FE522D500B80086 /* UINavigationBar+GradientLayer.swift */; };
+		48A343ED1FE522D500B80086 /* UINavigationBar+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343EC1FE522D500B80086 /* UINavigationBar+Setup.swift */; };
 		48A343EF1FE5240E00B80086 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343EE1FE5240E00B80086 /* UIColor+Palette.swift */; };
+		48A343F31FE527C100B80086 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343F21FE527C100B80086 /* RoundCornerButton.swift */; };
+		48A343F51FE527F800B80086 /* ColorRoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343F41FE527F800B80086 /* ColorRoundCornerButton.swift */; };
+		48A343F91FE5284700B80086 /* GradientCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343F81FE5284700B80086 /* GradientCornerButton.swift */; };
+		48A343FB1FE52C9A00B80086 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343FA1FE52C9A00B80086 /* OnboardingViewController.swift */; };
+		48A343FD1FE52CAA00B80086 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343FC1FE52CAA00B80086 /* OnboardingViewModel.swift */; };
+		48A343FF1FE52DC600B80086 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A343FE1FE52DC600B80086 /* OnboardingCollectionViewCell.swift */; };
+		48A344011FE52E3300B80086 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A344001FE52E3300B80086 /* UIView+Identifier.swift */; };
+		48A344031FE530CC00B80086 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A344021FE530CC00B80086 /* OnboardingCollectionViewCell.xib */; };
 		967BA01C0B7FAB090149BFED /* Pods_Gelukszaaiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
@@ -34,8 +42,16 @@
 		48A343E41FE5210F00B80086 /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
 		48A343E61FE5211800B80086 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		48A343EA1FE522C100B80086 /* CAGradientLayer+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Image.swift"; sourceTree = "<group>"; };
-		48A343EC1FE522D500B80086 /* UINavigationBar+GradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+GradientLayer.swift"; sourceTree = "<group>"; };
+		48A343EC1FE522D500B80086 /* UINavigationBar+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Setup.swift"; sourceTree = "<group>"; };
 		48A343EE1FE5240E00B80086 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		48A343F21FE527C100B80086 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		48A343F41FE527F800B80086 /* ColorRoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRoundCornerButton.swift; sourceTree = "<group>"; };
+		48A343F81FE5284700B80086 /* GradientCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCornerButton.swift; sourceTree = "<group>"; };
+		48A343FA1FE52C9A00B80086 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		48A343FC1FE52CAA00B80086 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		48A343FE1FE52DC600B80086 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		48A344001FE52E3300B80086 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		48A344021FE530CC00B80086 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gelukszaaiers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				48A343DF1FE520DC00B80086 /* Onboarding.storyboard */,
+				48A343FC1FE52CAA00B80086 /* OnboardingViewModel.swift */,
+				48A343FA1FE52C9A00B80086 /* OnboardingViewController.swift */,
+				48A343FE1FE52DC600B80086 /* OnboardingCollectionViewCell.swift */,
+				48A344021FE530CC00B80086 /* OnboardingCollectionViewCell.xib */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -104,8 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				48A343EA1FE522C100B80086 /* CAGradientLayer+Image.swift */,
-				48A343EC1FE522D500B80086 /* UINavigationBar+GradientLayer.swift */,
+				48A343EC1FE522D500B80086 /* UINavigationBar+Setup.swift */,
 				48A343EE1FE5240E00B80086 /* UIColor+Palette.swift */,
+				48A344001FE52E3300B80086 /* UIView+Identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,8 +134,35 @@
 		48A343F01FE5271700B80086 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				48A343F71FE5283B00B80086 /* GradientCornerButton */,
+				48A343F11FE527A100B80086 /* RoundCornerButton */,
+				48A343F61FE527FC00B80086 /* ColorRoundCornerButton */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		48A343F11FE527A100B80086 /* RoundCornerButton */ = {
+			isa = PBXGroup;
+			children = (
+				48A343F21FE527C100B80086 /* RoundCornerButton.swift */,
+			);
+			path = RoundCornerButton;
+			sourceTree = "<group>";
+		};
+		48A343F61FE527FC00B80086 /* ColorRoundCornerButton */ = {
+			isa = PBXGroup;
+			children = (
+				48A343F41FE527F800B80086 /* ColorRoundCornerButton.swift */,
+			);
+			path = ColorRoundCornerButton;
+			sourceTree = "<group>";
+		};
+		48A343F71FE5283B00B80086 /* GradientCornerButton */ = {
+			isa = PBXGroup;
+			children = (
+				48A343F81FE5284700B80086 /* GradientCornerButton.swift */,
+			);
+			path = GradientCornerButton;
 			sourceTree = "<group>";
 		};
 		9D62EE8E1FE5193800EA6F5B = {
@@ -138,12 +186,12 @@
 		9D62EE991FE5193800EA6F5B /* Gelukszaaiers */ = {
 			isa = PBXGroup;
 			children = (
-				48A343F01FE5271700B80086 /* Views */,
 				9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */,
 				48A343E91FE5227D00B80086 /* Extensions */,
 				48A343DD1FE5208600B80086 /* Modules */,
 				9D62EEAE1FE51AE300EA6F5B /* Service */,
 				9D62EEAD1FE5199E00EA6F5B /* Supporting Files */,
+				48A343F01FE5271700B80086 /* Views */,
 			);
 			path = Gelukszaaiers;
 			sourceTree = "<group>";
@@ -278,6 +326,7 @@
 				9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */,
 				48A343E31FE5210600B80086 /* Start.storyboard in Resources */,
 				48A343E01FE520DC00B80086 /* Onboarding.storyboard in Resources */,
+				48A344031FE530CC00B80086 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +396,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D62EEB51FE51B3400EA6F5B /* BackendError.swift in Sources */,
+				48A344011FE52E3300B80086 /* UIView+Identifier.swift in Sources */,
+				48A343F51FE527F800B80086 /* ColorRoundCornerButton.swift in Sources */,
 				48A343EF1FE5240E00B80086 /* UIColor+Palette.swift in Sources */,
+				48A343FB1FE52C9A00B80086 /* OnboardingViewController.swift in Sources */,
 				48A343EB1FE522C100B80086 /* CAGradientLayer+Image.swift in Sources */,
 				9D62EEC31FE51D1D00EA6F5B /* Service.swift in Sources */,
-				48A343ED1FE522D500B80086 /* UINavigationBar+GradientLayer.swift in Sources */,
+				48A343FF1FE52DC600B80086 /* OnboardingCollectionViewCell.swift in Sources */,
+				48A343ED1FE522D500B80086 /* UINavigationBar+Setup.swift in Sources */,
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
+				48A343F91FE5284700B80086 /* GradientCornerButton.swift in Sources */,
+				48A343F31FE527C100B80086 /* RoundCornerButton.swift in Sources */,
 				48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */,
 				48A343E71FE5211800B80086 /* StartViewController.swift in Sources */,
+				48A343FD1FE52CAA00B80086 /* OnboardingViewModel.swift in Sources */,
 				9D62EEC01FE51C9100EA6F5B /* FacebookRequest.swift in Sources */,
 				9D62EEB71FE51B4600EA6F5B /* Result.swift in Sources */,
 				9D62EEB31FE51B1C00EA6F5B /* JSONSerializer.swift in Sources */,

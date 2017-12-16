@@ -6,4 +6,10 @@
 //  Copyright © 2017 Gelukszaaiers. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIView {
+    class var reuseIdentifier: String {
+        return String(describing: self)
+    }
+}

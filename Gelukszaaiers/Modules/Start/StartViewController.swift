@@ -22,6 +22,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        updateTranslations()
     }
 }
 
@@ -29,10 +30,25 @@ class StartViewController: UIViewController {
 extension StartViewController {
     func setupView() {
         setupBackground()
+        setupNavigationBar()
     }
     
     func setupBackground() {
         let gradientLayer = CAGradientLayer(frame: view.bounds, colors: [.lightGold, .mango])
         view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.clear()
+    }
+}
+
+// MARK: - Translations
+extension StartViewController {
+    func updateTranslations() {
+        titleLabel?.text = viewModel.titleLabel
+        hapinessOfferButton?.setTitle(viewModel.hapinessOfferButtonTitle, for: .normal)
+        loginButton?.setTitle(viewModel.loginButtonTitle, for: .normal)
+        registerButton?.setTitle(viewModel.registerButtonTitle, for: .normal)
     }
 }
