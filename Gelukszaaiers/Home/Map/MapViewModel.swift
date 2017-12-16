@@ -26,9 +26,15 @@ class MapViewModel {
         self.service = service
     }
 
+    // MARK: - Text
+
+    var seedCountString: String {
+        return "\(seeds.count) Actieve gelukszaadjes"
+    }
+
     // MARK: - Seeds
 
-    private(set) var seeds: [Seed] = [] {
+    private var seeds: [Seed] = [] {
         didSet {
             updateSeeds?()
         }

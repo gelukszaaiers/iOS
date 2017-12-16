@@ -36,6 +36,8 @@ class MapViewController: UIViewController {
         mapView.removeAnnotations(mapView.annotations)
         // Add seed annotations.
         mapView.addAnnotations(viewModel.annotations)
+        // Update the seeds label.
+        seedsLabel.text = viewModel.seedCountString
     }
 
 }
