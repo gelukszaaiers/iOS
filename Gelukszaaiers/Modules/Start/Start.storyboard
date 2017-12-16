@@ -32,6 +32,9 @@
                                             <constraint firstAttribute="height" constant="44" id="WQt-9p-p3S"/>
                                         </constraints>
                                         <state key="normal" title="Bekijk het geluksaanbod"/>
+                                        <connections>
+                                            <segue destination="ibq-4j-JeR" kind="show" id="i6K-6o-mT9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXW-Xd-sO4" customClass="ColorRoundCornerButton" customModule="Gelukszaaiers" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="52.5" width="305" height="44.5"/>
@@ -79,6 +82,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wue-jZ-aCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-212" y="-15.742128935532236"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="4BJ-hz-gVS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="ibq-4j-JeR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iO8-8Z-ORq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="-101"/>
         </scene>
         <!--Login-->
         <scene sceneID="Z3j-UY-VzQ">
