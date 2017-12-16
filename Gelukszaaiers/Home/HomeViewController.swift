@@ -38,6 +38,14 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
 
+    // MARK: - Actions
+
+    @IBAction func addNewSeed(_ sender: AnyObject) {
+        let controller = AddSeedViewController()
+        let navigationController = UINavigationController(rootViewController: controller)
+        present(navigationController, animated: true, completion: nil)
+    }
+
 }
 
 extension HomeViewController: MapViewControllerDelegate {

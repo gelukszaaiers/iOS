@@ -108,7 +108,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NUx-ie-OOd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="URC-01-oyF"/>
+                    <navigationItem key="navigationItem" id="URC-01-oyF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ktu-5N-xhq">
+                            <connections>
+                                <action selector="addNewSeed:" destination="fDs-SW-r9B" id="WKb-BC-rMJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="D9R-3b-RxQ" id="W6b-3m-9hW"/>
                     </connections>
