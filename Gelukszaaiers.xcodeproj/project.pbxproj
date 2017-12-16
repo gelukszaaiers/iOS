@@ -46,6 +46,7 @@
 		9D3FCED51FE5382C00A9DC85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */; };
 		9D3FCED71FE53EE000A9DC85 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED61FE53EE000A9DC85 /* Authentication.swift */; };
 		9D3FCED91FE53FD100A9DC85 /* YourProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED81FE53FD100A9DC85 /* YourProfileRequest.swift */; };
+		9D3FCEDB1FE5421A00A9DC85 /* SeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
 		9D62EEA51FE5193800EA6F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA31FE5193800EA6F5B /* LaunchScreen.storyboard */; };
@@ -99,6 +100,7 @@
 		9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9D3FCED61FE53EE000A9DC85 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		9D3FCED81FE53FD100A9DC85 /* YourProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileRequest.swift; sourceTree = "<group>"; };
+		9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedTableViewCell.swift; sourceTree = "<group>"; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D62EEA11FE5193800EA6F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				9D3FCEBF1FE5378600A9DC85 /* Home.storyboard */,
 				9D3FCED21FE5382100A9DC85 /* HomeViewController.swift */,
 				9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */,
+				9D3FCEDA1FE5421A00A9DC85 /* SeedTableViewCell.swift */,
 				9D3FCEC01FE5378600A9DC85 /* Map */,
 			);
 			name = Home;
@@ -548,6 +551,7 @@
 				9D06ED711FE525780026845C /* Adapter.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
 				9D3FCEC41FE5378600A9DC85 /* MapViewController.swift in Sources */,
+				9D3FCEDB1FE5421A00A9DC85 /* SeedTableViewCell.swift in Sources */,
 				9D06ED731FE5261F0026845C /* Serializer.swift in Sources */,
 				9D33D50F1FE52F780047E16B /* Image.swift in Sources */,
 				48A343F91FE5284700B80086 /* GradientCornerButton.swift in Sources */,

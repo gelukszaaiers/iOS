@@ -41,11 +41,13 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.seedCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SeedTableViewCell
+        cell.configure(seed: viewModel[indexPath])
+        return cell
     }
 
 }

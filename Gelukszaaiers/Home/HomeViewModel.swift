@@ -32,6 +32,18 @@ class HomeViewModel {
         }
     }
 
+    var seedCount: Int {
+        return seeds.count
+    }
+
+    subscript(indexPath: IndexPath) -> Seed? {
+        return seeds[indexPath.row]
+    }
+
+    private var seeds: [Seed] {
+        return profile?.seeds_visited ?? []
+    }
+
     // MARK: - Request
 
     func fetch() {
