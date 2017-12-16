@@ -18,6 +18,10 @@ target 'Gelukszaaiers' do
   pod 'Alamofire', '~> 4.6'
   pod 'AlamofireActivityLogger', '~> 2.4'
 
+  # Facebook Integration
+  pod 'FBSDKCoreKit', '~> 4.29'
+  pod 'FBSDKLoginKit', '~> 4.29'
+
   # Fabric
   pod 'Fabric', '~> 1.7'
   pod 'Crashlytics', '~> 3.9'
