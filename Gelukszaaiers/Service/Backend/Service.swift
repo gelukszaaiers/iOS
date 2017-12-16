@@ -33,7 +33,7 @@ class Service {
         sessionManager
             .request(request)
             .validate()
-            .log(level: .all)
+            .log(level: .info)
             .responseData { response in
             serializer.serialize(response.data)
             completion?()
