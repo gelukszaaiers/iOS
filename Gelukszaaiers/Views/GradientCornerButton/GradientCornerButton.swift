@@ -10,11 +10,10 @@ import UIKit
 
 class GradientCornerButton: RoundCornerButton {
 
-    override func setupButton() {
-        super.setupButton()
-        
+    override func layoutSubviews() {
+        super.layoutSubviews()
         let gradientLayer = CAGradientLayer(frame: bounds, colors: [.booger, .leaf])
         layer.insertSublayer(gradientLayer, at: 0)
     }
-
+    
 }
