@@ -38,6 +38,11 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
 
+    // MARK: - Segue
+
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
+    }
+
 }
 
 extension HomeViewController: MapViewControllerDelegate {
