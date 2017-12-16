@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyFORM
+import LocationPickerViewController
 
 class AddSeedViewController: FormViewController {
 
@@ -74,7 +75,18 @@ class AddSeedViewController: FormViewController {
             return
         }
 
-        
+        let locationFormItem = CustomFormItem()
+        locationFormItem.createCell = { _ in
+            let cell = try LocationTableViewCell.createCell()
+            cell.configure(location: location)
+            return cell
+        }
+        builder += locationFormItem
+    }
+
+    private func clearLocation() {
+        location = nil
+        reloadForm()
     }
 
     // MARK: Fields
@@ -130,7 +142,7 @@ class AddSeedViewController: FormViewController {
 
     // MARK: - Location
 
-    private var location: Location?
+    private var location: LocationItem?
 
     private lazy var addLocationButton: ButtonFormItem = { [unowned self] in
         let button = ButtonFormItem()
@@ -140,7 +152,13 @@ class AddSeedViewController: FormViewController {
     }()
 
     private func showLocationPicker() {
-        
+        let locationPicker = LocationPicker()
+        locationPicker.selectCompletion = { [unowned self] location in
+            self.location = location
+            self.navigationController?.popViewController(animated: true)
+            self.reloadForm()
+        }
+        navigationController?.pushViewController(locationPicker, animated: true)
     }
 
 }
