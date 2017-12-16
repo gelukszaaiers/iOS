@@ -28,7 +28,9 @@ class LoginViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if FBSDKAccessToken.current() != nil {
-            performSegue(withIdentifier: "goToHome", sender: nil)
+//            let request = FacebookRequest(token: FBSDKAccessToken.current().tokenString)
+//            Service.shared.execute(request, with: nil)
+//            performSegue(withIdentifier: "goToHome", sender: nil)
         }
     }
 }
