@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,81 +26,102 @@
             </objects>
             <point key="canvasLocation" x="-737" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="2ni-cj-ce4">
             <objects>
-                <viewController id="fDs-SW-r9B" sceneMemberID="viewController">
+                <viewController id="fDs-SW-r9B" customClass="HomeViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EPi-iQ-l4B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-fx-1Z6">
-                                <rect key="frame" x="16" y="96" width="343" height="381"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D9R-3b-RxQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="YhO-ZG-ib0" kind="embed" id="dKU-EA-L5q"/>
+                                    <outlet property="dataSource" destination="fDs-SW-r9B" id="gjo-Pw-R8i"/>
+                                    <outlet property="delegate" destination="fDs-SW-r9B" id="bGe-ih-Y1W"/>
                                 </connections>
-                            </containerView>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NUx-ie-OOd" firstAttribute="trailing" secondItem="NtW-fx-1Z6" secondAttribute="trailing" constant="16" id="3vm-F5-UHw"/>
-                            <constraint firstItem="NtW-fx-1Z6" firstAttribute="top" secondItem="NUx-ie-OOd" secondAttribute="top" constant="32" id="5Nx-js-oqY"/>
-                            <constraint firstItem="NtW-fx-1Z6" firstAttribute="leading" secondItem="NUx-ie-OOd" secondAttribute="leading" constant="16" id="M5g-oK-xu7"/>
-                            <constraint firstItem="NtW-fx-1Z6" firstAttribute="height" secondItem="EPi-iQ-l4B" secondAttribute="height" multiplier="4/7" id="fli-4v-wIM"/>
+                            <constraint firstItem="NUx-ie-OOd" firstAttribute="trailing" secondItem="D9R-3b-RxQ" secondAttribute="trailing" id="P2J-ge-GLH"/>
+                            <constraint firstItem="D9R-3b-RxQ" firstAttribute="top" secondItem="EPi-iQ-l4B" secondAttribute="top" id="PxO-fC-dPf"/>
+                            <constraint firstItem="D9R-3b-RxQ" firstAttribute="leading" secondItem="NUx-ie-OOd" secondAttribute="leading" id="eUB-9a-yr2"/>
+                            <constraint firstItem="NUx-ie-OOd" firstAttribute="bottom" secondItem="D9R-3b-RxQ" secondAttribute="bottom" id="fCU-a3-mTO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NUx-ie-OOd"/>
                     </view>
                     <navigationItem key="navigationItem" id="URC-01-oyF"/>
+                    <connections>
+                        <outlet property="tableView" destination="D9R-3b-RxQ" id="W6b-3m-9hW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eT9-zQ-YFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="90"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="89.505247376311857"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="i98-s1-iSA">
             <objects>
-                <viewController id="YhO-ZG-ib0" customClass="MapViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fOe-ND-fK7">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="381"/>
+                <viewController storyboardIdentifier="Map" automaticallyAdjustsScrollViewInsets="NO" id="YhO-ZG-ib0" customClass="MapViewController" customModule="Gelukszaaiers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="fOe-ND-fK7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-4f-yci">
-                                <rect key="frame" x="0.0" y="0.0" width="343" height="341"/>
-                            </mapView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rCq-vp-QFj">
-                                <rect key="frame" x="0.0" y="341" width="343" height="40"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QyO-cX-iyq">
+                                <rect key="frame" x="16" y="52" width="343" height="599"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-2c-KG2">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="03C-Kv-clb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-4f-yci">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="559"/>
+                                    </mapView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rCq-vp-QFj">
+                                        <rect key="frame" x="0.0" y="559" width="343" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-2c-KG2">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                                <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="03C-Kv-clb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lXh-4f-yci" firstAttribute="top" secondItem="QyO-cX-iyq" secondAttribute="top" id="CrY-pj-jAn"/>
+                                    <constraint firstItem="rCq-vp-QFj" firstAttribute="leading" secondItem="QyO-cX-iyq" secondAttribute="leading" id="Ooj-25-pm6"/>
+                                    <constraint firstAttribute="trailing" secondItem="lXh-4f-yci" secondAttribute="trailing" id="aeu-rM-wlY"/>
+                                    <constraint firstItem="rCq-vp-QFj" firstAttribute="top" secondItem="lXh-4f-yci" secondAttribute="bottom" id="agc-aS-sZn"/>
+                                    <constraint firstAttribute="trailing" secondItem="rCq-vp-QFj" secondAttribute="trailing" id="jI3-eK-uTa"/>
+                                    <constraint firstAttribute="bottom" secondItem="rCq-vp-QFj" secondAttribute="bottom" id="jVx-Xs-nzH"/>
+                                    <constraint firstItem="lXh-4f-yci" firstAttribute="leading" secondItem="QyO-cX-iyq" secondAttribute="leading" id="wiR-nm-Wlc"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lXh-4f-yci" firstAttribute="leading" secondItem="fOe-ND-fK7" secondAttribute="leading" id="NTg-Vm-3RF"/>
-                            <constraint firstAttribute="bottom" secondItem="rCq-vp-QFj" secondAttribute="bottom" id="b59-hh-UZi"/>
-                            <constraint firstAttribute="trailing" secondItem="lXh-4f-yci" secondAttribute="trailing" id="dZZ-Sg-n1u"/>
-                            <constraint firstItem="lXh-4f-yci" firstAttribute="top" secondItem="fOe-ND-fK7" secondAttribute="top" id="gBN-N6-m32"/>
-                            <constraint firstItem="rCq-vp-QFj" firstAttribute="leading" secondItem="fOe-ND-fK7" secondAttribute="leading" id="ibb-Al-rUl"/>
-                            <constraint firstItem="rCq-vp-QFj" firstAttribute="top" secondItem="lXh-4f-yci" secondAttribute="bottom" id="xdd-BV-aab"/>
-                            <constraint firstAttribute="trailing" secondItem="rCq-vp-QFj" secondAttribute="trailing" id="xvy-bE-dUr"/>
+                            <constraint firstItem="tzn-NY-CCv" firstAttribute="bottom" secondItem="QyO-cX-iyq" secondAttribute="bottom" constant="16" id="FVO-rt-erb"/>
+                            <constraint firstItem="tzn-NY-CCv" firstAttribute="trailing" secondItem="QyO-cX-iyq" secondAttribute="trailing" constant="16" id="g1m-kQ-Kho"/>
+                            <constraint firstItem="QyO-cX-iyq" firstAttribute="leading" secondItem="tzn-NY-CCv" secondAttribute="leading" constant="16" id="mOn-dA-cUt"/>
+                            <constraint firstItem="QyO-cX-iyq" firstAttribute="top" secondItem="tzn-NY-CCv" secondAttribute="top" constant="32" id="y9e-Dk-oVs"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="tzn-NY-CCv"/>
                     </view>
                     <connections>
+                        <outlet property="mapContainerView" destination="QyO-cX-iyq" id="jfW-dD-oxP"/>
                         <outlet property="mapView" destination="lXh-4f-yci" id="tZx-kU-nFj"/>
                         <outlet property="seedsLabel" destination="U9S-2c-KG2" id="p0N-QG-gnc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lq-Vu-Zt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="679"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="751.57421289355329"/>
         </scene>
     </scenes>
 </document>

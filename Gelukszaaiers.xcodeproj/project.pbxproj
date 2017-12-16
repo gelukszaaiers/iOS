@@ -38,6 +38,8 @@
 		9D3FCECE1FE5379400A9DC85 /* Coordinate+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCECA1FE5379400A9DC85 /* Coordinate+Location.swift */; };
 		9D3FCECF1FE5379400A9DC85 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCECB1FE5379400A9DC85 /* Coordinate.swift */; };
 		9D3FCED11FE5379F00A9DC85 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3FCED01FE5379F00A9DC85 /* MapKit.framework */; };
+		9D3FCED31FE5382100A9DC85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED21FE5382100A9DC85 /* HomeViewController.swift */; };
+		9D3FCED51FE5382C00A9DC85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
 		9D62EEA51FE5193800EA6F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA31FE5193800EA6F5B /* LaunchScreen.storyboard */; };
@@ -83,6 +85,8 @@
 		9D3FCECA1FE5379400A9DC85 /* Coordinate+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinate+Location.swift"; sourceTree = "<group>"; };
 		9D3FCECB1FE5379400A9DC85 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		9D3FCED01FE5379F00A9DC85 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9D3FCED21FE5382100A9DC85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D62EEA11FE5193800EA6F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				9D3FCEBF1FE5378600A9DC85 /* Home.storyboard */,
+				9D3FCED21FE5382100A9DC85 /* HomeViewController.swift */,
+				9D3FCED41FE5382C00A9DC85 /* HomeViewModel.swift */,
 				9D3FCEC01FE5378600A9DC85 /* Map */,
 			);
 			name = Home;
@@ -483,6 +489,7 @@
 				9D3FCECE1FE5379400A9DC85 /* Coordinate+Location.swift in Sources */,
 				9D3FCEC51FE5378600A9DC85 /* MapViewModel.swift in Sources */,
 				9D62EEB51FE51B3400EA6F5B /* BackendError.swift in Sources */,
+				9D3FCED31FE5382100A9DC85 /* HomeViewController.swift in Sources */,
 				48A344011FE52E3300B80086 /* UIView+Identifier.swift in Sources */,
 				48A343F51FE527F800B80086 /* ColorRoundCornerButton.swift in Sources */,
 				9D3FCECF1FE5379400A9DC85 /* Coordinate.swift in Sources */,
@@ -502,6 +509,7 @@
 				9D33D50F1FE52F780047E16B /* Image.swift in Sources */,
 				48A343F91FE5284700B80086 /* GradientCornerButton.swift in Sources */,
 				48A343F31FE527C100B80086 /* RoundCornerButton.swift in Sources */,
+				9D3FCED51FE5382C00A9DC85 /* HomeViewModel.swift in Sources */,
 				48A343E51FE5210F00B80086 /* StartViewModel.swift in Sources */,
 				48A343E71FE5211800B80086 /* StartViewController.swift in Sources */,
 				9D06ED751FE5295D0026845C /* SeedsRequest.swift in Sources */,
