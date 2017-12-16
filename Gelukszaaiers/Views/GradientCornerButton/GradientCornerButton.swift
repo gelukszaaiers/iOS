@@ -10,12 +10,11 @@ import UIKit
 
 class GradientCornerButton: RoundCornerButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func setupButton() {
+        super.setupButton()
+        
+        let gradientLayer = CAGradientLayer(frame: bounds, colors: [.booger, .leaf])
+        layer.insertSublayer(gradientLayer, at: 0)
     }
-    */
 
 }

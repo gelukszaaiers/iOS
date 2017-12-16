@@ -10,12 +10,21 @@ import UIKit
 
 class ColorRoundCornerButton: RoundCornerButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var color: UIColor? {
+        set {
+            guard let value = newValue else { return }
+            layer.borderColor = value.cgColor
+        }
+        get {
+            guard let borderColor = layer.borderColor else { return nil }
+            return UIColor(cgColor: borderColor)
+        }
     }
-    */
-
+    
+    override func setupButton() {
+        super.setupButton()
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.white.cgColor
+    }
+    
 }
