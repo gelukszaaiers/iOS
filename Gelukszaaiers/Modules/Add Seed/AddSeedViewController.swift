@@ -49,6 +49,8 @@ class AddSeedViewController: FormViewController {
         builder += SectionFormItem()
         builder += beginDateField
         builder += endDateField
+        builder += SectionFormItem()
+        populateLocation(in: builder)
     }
 
     private func populateImages(in builder: FormBuilder) {
@@ -64,6 +66,15 @@ class AddSeedViewController: FormViewController {
             return cell
         }
         builder += imagesFormItem
+    }
+
+    private func populateLocation(in builder: FormBuilder) {
+        guard let location = location else {
+            builder += addLocationButton
+            return
+        }
+
+        
     }
 
     // MARK: Fields
@@ -115,6 +126,21 @@ class AddSeedViewController: FormViewController {
         picker.allowsEditing = true
         picker.delegate = self
         present(picker, animated: true)
+    }
+
+    // MARK: - Location
+
+    private var location: Location?
+
+    private lazy var addLocationButton: ButtonFormItem = { [unowned self] in
+        let button = ButtonFormItem()
+        button.title = "Locatie toevoegen"
+        button.action = self.showLocationPicker
+        return button
+    }()
+
+    private func showLocationPicker() {
+        
     }
 
 }
