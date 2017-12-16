@@ -16,6 +16,7 @@ target 'Gelukszaaiers' do
 
   # UI
   pod 'SwiftyFORM', '~> 1.5'
+  pod 'LocationPickerViewController', '~> 3.1'
 
   # Services
   pod 'Alamofire', '~> 4.6'

@@ -15,6 +15,7 @@ PODS:
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.29.0):
     - FBSDKCoreKit
+  - LocationPickerViewController (3.1)
   - Stella (1.1.0)
   - SwiftyFORM (1.5.0)
 
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - Fabric (~> 1.7)
   - FBSDKCoreKit (~> 4.29)
   - FBSDKLoginKit (~> 4.29)
+  - LocationPickerViewController (~> 3.1)
   - Stella (~> 1.1)
   - SwiftyFORM (~> 1.5)
 
@@ -36,9 +38,10 @@ SPEC CHECKSUMS:
   Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
   FBSDKLoginKit: 56a057ca6822535ea0faa25f57a7c41edb697fd4
+  LocationPickerViewController: 76118f58350c66037b72d7a503f069332e6f1b53
   Stella: 8f62d6f595ed49ff0f7069ba6a308b3f51d1e083
   SwiftyFORM: dc40697dd6f776bc8fdf095ba637f99c55009a01
 
-PODFILE CHECKSUM: 9b4ff2158bf059583e318d546202b7d9d9571df0
+PODFILE CHECKSUM: 2db78548f1435ab9816d798aff78b0156a80c95e
 
 COCOAPODS: 1.3.1
