@@ -16,9 +16,25 @@ class HomeViewController: UIViewController {
 
     // MARK: - Internals
 
+    private let viewModel = HomeViewModel()
     private lazy var mapViewController: MapViewController = { [unowned self] in
         return self.storyboard?.instantiateViewController(withIdentifier: "Map") as! MapViewController
     }()
+
+    // MARK: - View flow
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        viewModel.updateProfile = updateProfile
+        viewModel.fetch()
+    }
+
+    // MARK: - UI
+
+    private func updateProfile() {
+        tableView.reloadData()
+    }
 
 }
 
