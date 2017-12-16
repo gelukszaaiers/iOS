@@ -45,13 +45,27 @@ class AddSeedViewController: FormViewController {
         builder += SectionFormItem()
         builder += descriptionField
         builder += SectionFormItem()
-        if images.count > 0 {
-        } else {
-            builder += addImageButton
-        }
+        populateImages(builder)
         builder += SectionFormItem()
         builder += beginDateField
         builder += endDateField
+    }
+
+    private func populateImages(_ builder: FormBuilder) {
+        guard images.count > 0 else {
+            builder += addImageButton
+            return
+        }
+
+        let imagesFormItem = CustomFormItem()
+        imagesFormItem.createCell = { [unowned self] _ in
+            let cell = try ImagesTableViewCell.createCell()
+            cell.configure(images: self.images) {
+                self.showImagePicker()
+            }
+            return cell
+        }
+        builder += imagesFormItem
     }
 
     // MARK: Fields
