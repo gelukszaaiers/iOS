@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+protocol MapViewControllerDelegate: class {
+    func mapViewControllerDidToggleType(_ controller: MapViewController)
+}
+
 class MapViewController: UIViewController {
 
     // MARK: - Outlets
@@ -16,6 +20,10 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapContainerView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var seedsLabel: UILabel!
+
+    // MARK: - Delegate
+
+    weak var delegate: MapViewControllerDelegate?
 
     // MARK: - Internals
 
@@ -28,6 +36,12 @@ class MapViewController: UIViewController {
 
         viewModel.updateSeeds = updateSeeds
         viewModel.fetch()
+    }
+
+    // MARK: - Actions
+
+    @IBAction func toggleSeeds(_ sender: Any) {
+        delegate?.mapViewControllerDidToggleType(self)
     }
 
     // MARK: - UI

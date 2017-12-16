@@ -18,7 +18,9 @@ class HomeViewController: UIViewController {
 
     private let viewModel = HomeViewModel()
     private lazy var mapViewController: MapViewController = { [unowned self] in
-        return self.storyboard?.instantiateViewController(withIdentifier: "Map") as! MapViewController
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "Map") as! MapViewController
+        controller.delegate = self
+        return controller
     }()
 
     // MARK: - View flow
@@ -34,6 +36,14 @@ class HomeViewController: UIViewController {
 
     private func updateProfile() {
         tableView.reloadData()
+    }
+
+}
+
+extension HomeViewController: MapViewControllerDelegate {
+
+    func mapViewControllerDidToggleType(_ controller: MapViewController) {
+        viewModel.toggleSeedType()
     }
 
 }

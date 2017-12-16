@@ -24,6 +24,20 @@ class HomeViewModel {
         self.service = service
     }
 
+    // MARK: - Type
+
+    enum SeedType {
+        case owned
+        case visited
+    }
+
+    private var seedType: SeedType = .owned
+
+    func toggleSeedType() {
+        seedType = seedType == .owned ? .visited : .owned
+        updateProfile?()
+    }
+
     // MARK: - Seeds
 
     private var profile: Profile? {
@@ -41,7 +55,12 @@ class HomeViewModel {
     }
 
     private var seeds: [Seed] {
-        return profile?.seeds_visited ?? []
+        switch seedType {
+        case .owned:
+            return profile?.seeds_owned ?? []
+        case .visited:
+            return profile?.seeds_visited ?? []
+        }
     }
 
     // MARK: - Request
