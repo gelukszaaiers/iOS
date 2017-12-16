@@ -9,12 +9,6 @@
 import Foundation
 
 struct Profile: Codable {
-
-    struct Authentication: Codable {
-        var accessToken: String?
-        var refreshToken: String?
-    }
-
     var id: String?
     var name: String?
     var email: String?
@@ -22,6 +16,9 @@ struct Profile: Codable {
     var verified: Bool?
     var avatar: URL?
     var langcode: String?
+    
     var authentication: Authentication?
+    var seeds_owned: [Seed]?
+    var seeds_visited: [Seed]?
 
 }

@@ -16,20 +16,48 @@ class HomeViewController: UIViewController {
 
     // MARK: - Internals
 
+    private let viewModel = HomeViewModel()
     private lazy var mapViewController: MapViewController = { [unowned self] in
-        return self.storyboard?.instantiateViewController(withIdentifier: "Map") as! MapViewController
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "Map") as! MapViewController
+        controller.delegate = self
+        return controller
     }()
+
+    // MARK: - View flow
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        viewModel.updateProfile = updateProfile
+        viewModel.fetch()
+    }
+
+    // MARK: - UI
+
+    private func updateProfile() {
+        tableView.reloadData()
+    }
+
+}
+
+extension HomeViewController: MapViewControllerDelegate {
+
+    func mapViewControllerDidToggleType(_ controller: MapViewController) {
+        viewModel.toggleSeedType()
+    }
 
 }
 
 extension HomeViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.seedCount
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SeedTableViewCell
+        cell.configure(seed: viewModel[indexPath])
+        return cell
     }
 
 }
