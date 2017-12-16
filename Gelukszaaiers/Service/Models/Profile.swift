@@ -21,7 +21,7 @@ struct Profile: Codable {
     var mobile: String?
     var verified: Bool?
     var avatar: URL?
-    var langcode: URL?
+    var langcode: String?
     var authentication: Authentication?
 
 }

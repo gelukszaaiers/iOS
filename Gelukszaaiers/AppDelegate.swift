@@ -16,8 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let request = FacebookRequest(token: "facebook_token")
-        Service.shared.execute(request) {
-            print("success")
+        let serializer = JSONSerializer<Profile>()
+        Service.shared.execute(request, with: serializer) {
+            switch serializer.response {
+            case .success(let result):
+                print(result.data)
+            case .failure(let error):
+                print(error)
+            }
         }
 
         return true

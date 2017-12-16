@@ -29,12 +29,13 @@ class Service {
 
     // MARK: - Execute
 
-    func execute(_ request: Request, completion: (() -> Void)? = nil) {
+    func execute(_ request: Request, with serializer: Serializer, completion: (() -> Void)? = nil) {
         sessionManager
             .request(request)
             .validate()
             .log(level: .all)
-            .responseJSON { response in
+            .responseData { response in
+            serializer.serialize(response.data)
             completion?()
         }
     }

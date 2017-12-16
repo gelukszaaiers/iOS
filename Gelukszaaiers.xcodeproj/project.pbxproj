@@ -10,6 +10,7 @@
 		967BA01C0B7FAB090149BFED /* Pods_Gelukszaaiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */; };
 		9D06ED6F1FE5224C0026845C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06ED6E1FE5224C0026845C /* Request.swift */; };
 		9D06ED711FE525780026845C /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06ED701FE525780026845C /* Adapter.swift */; };
+		9D06ED731FE5261F0026845C /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D06ED721FE5261F0026845C /* Serializer.swift */; };
 		9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */; };
 		9D62EEA01FE5193800EA6F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EE9E1FE5193800EA6F5B /* Main.storyboard */; };
 		9D62EEA21FE5193800EA6F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D62EEA11FE5193800EA6F5B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		7DCD39BB937DB4DAD8B4681E /* Pods_Gelukszaaiers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gelukszaaiers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D06ED6E1FE5224C0026845C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9D06ED701FE525780026845C /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		9D06ED721FE5261F0026845C /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		9D62EE971FE5193800EA6F5B /* Gelukszaaiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gelukszaaiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D62EE9A1FE5193800EA6F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D62EE9F1FE5193800EA6F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				9D62EEB21FE51B1C00EA6F5B /* JSONSerializer.swift */,
 				9D62EEB81FE51B5E00EA6F5B /* Response.swift */,
 				9D62EEB61FE51B4600EA6F5B /* Result.swift */,
+				9D06ED721FE5261F0026845C /* Serializer.swift */,
 			);
 			path = Serializer;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				9D62EEBC1FE51BAE00EA6F5B /* Profile.swift in Sources */,
 				9D06ED711FE525780026845C /* Adapter.swift in Sources */,
 				9D62EE9B1FE5193800EA6F5B /* AppDelegate.swift in Sources */,
+				9D06ED731FE5261F0026845C /* Serializer.swift in Sources */,
 				9D62EEC01FE51C9100EA6F5B /* FacebookRequest.swift in Sources */,
 				9D62EEB71FE51B4600EA6F5B /* Result.swift in Sources */,
 				9D62EEB31FE51B1C00EA6F5B /* JSONSerializer.swift in Sources */,
