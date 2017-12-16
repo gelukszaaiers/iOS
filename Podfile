@@ -14,6 +14,9 @@ target 'Gelukszaaiers' do
   # Utility
   pod 'Stella', '~> 1.1'
 
+  # UI
+  pod 'SwiftyFORM', '~> 1.5'
+
   # Services
   pod 'Alamofire', '~> 4.6'
   pod 'AlamofireActivityLogger', '~> 2.4'

@@ -16,6 +16,7 @@ PODS:
   - FBSDKLoginKit (4.29.0):
     - FBSDKCoreKit
   - Stella (1.1.0)
+  - SwiftyFORM (1.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - FBSDKCoreKit (~> 4.29)
   - FBSDKLoginKit (~> 4.29)
   - Stella (~> 1.1)
+  - SwiftyFORM (~> 1.5)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -35,7 +37,8 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
   FBSDKLoginKit: 56a057ca6822535ea0faa25f57a7c41edb697fd4
   Stella: 8f62d6f595ed49ff0f7069ba6a308b3f51d1e083
+  SwiftyFORM: dc40697dd6f776bc8fdf095ba637f99c55009a01
 
-PODFILE CHECKSUM: 84bbf3463b71f01af88770c5a5baba5d0e3ace74
+PODFILE CHECKSUM: 9b4ff2158bf059583e318d546202b7d9d9571df0
 
 COCOAPODS: 1.3.1
