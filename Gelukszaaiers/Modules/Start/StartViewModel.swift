@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct StartViewModel {
+    var titleLabel: String {
+        return "Ga aan de slag!"
+    }
+    
+    var loginButtonTitle: String {
+        return "Inloggen"
+    }
+    
+    var registerButtonTitle: String {
+        return "Registeren"
+    }
+}
