@@ -7,10 +7,8 @@
 //
 
 import Foundation
-
-protocol Request {
-
-}
+import Alamofire
+import AlamofireActivityLogger
 
 class Service {
 
@@ -21,10 +19,24 @@ class Service {
     private init() {
     }
 
+    // MARK: - Manager
+
+    private lazy var sessionManager: SessionManager = { [unowned self] in
+        let manager = SessionManager()
+        manager.adapter = Adapter()
+        return manager
+    }()
+
     // MARK: - Execute
 
     func execute(_ request: Request, completion: (() -> Void)? = nil) {
-        completion?()
+        sessionManager
+            .request(request)
+            .validate()
+            .log(level: .all)
+            .responseJSON { response in
+            completion?()
+        }
     }
 
 }

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        let request = FacebookRequest(token: "123")
+        let request = FacebookRequest(token: "facebook_token")
         Service.shared.execute(request) {
             print("success")
         }
